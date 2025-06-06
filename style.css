@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    background-color: #dbf5f6;
+    color: #333;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+.image-gradient{
+    position: absolute;
+    top: 0;
+    right:0;
+    opacity: 0.5;
+    z-index:-1;
+}
+.layer-blur{
+    height: 0;
+    width: 30rem;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    box-shadow: 0 0  100vmax #014244;
+    rotate: -30deg;
+    z-index: -1;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    z-index: 999;
+}
+header h1{
+    margin: 100;
+    align-items: 3rem;
+    font-weight:300;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap:3rem;
+    margin-left: 5%;
+}
+nav a{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+nav a:hover{
+    color: #014244;
+}
+.btn-signin{
+    background-color: #014244;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.btn-signin:hover{
+    background-color: gray;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(90vh - 5rem);
+
+}
+.content{
+    margin-left: 2rem;
+    max-width: 40rem;
+    margin-top: 10%;
+    z-index:999;
+}
+.tag-box{
+    position:relative ;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background: linear-gradient(to right,#656565, #7f42a7,#6600c5,#5300ac ,#757575,#656565 );
+    background-size: 200%;
+    animation:animateGradient 5s linear infinite;
+    box-shadow: 0 0 20px rgba(212, 70, 255, 0.5);
+
+}
+@keyframes animateGradient{
+    to{
+        background-position: 200%;
+    }
+}
+tag-box.tag{
+    position:absolute;
+    inset: 3px 3px 3px 3px;
+    background-color: blanchedalmond;
+    border-radius: 50px;
+    display:flex;
+    justify-content: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.tag-box.tag:hover{
+    color: #5300a0;
+}
+.content h1{
+    font-size:  3rem;
+    font-weight: 600;
+    letter-spacing:0.1em ;
+    margin: 2rem 0;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(100, 96, 96, 0.5);
+}
+.description{
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    max-width: 35rem;
+    color:grey;
+}
+.button{
+    display:flex;
+    gap:1rem;
+    margin-top: 2rem;
+}
+.btn-get-started{
+    background-color: #014244;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.3rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.btn-get-started:hover{
+    background-color:gray;
+}
+.btn-signin-main{
+    text-decoration: none;
+    background-color: #014244;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    font-size:1.2rem;
+    font-weight: 600;
+    letter-spacing:0.1em;
+    transition : background-color 0.3s ease;
+    cursor: pointer;
+
+}
+.btn-signin-main:hover{
+    background-color: gray;
+}
+.robo{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    height: auto;
+    width: 100auto;
+}
+@media (max-width:1300px){
+    header{
+        padding:1rem 0.5rem;
+    }
+    .content{
+        margin-top: 85%;
+    }
+    .robo{
+        scale: 0.8;
+        position: absolute;
+        top: 20px;
+        right: 2%;
+    }
+}
+@media (max-width: 768px){
+    header{
+        padding: 1rem 0.5rem;
+    }
+    header h1{
+        padding: 0.5rem 1.5rem;
+    }
+    .content h1{
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
+    }
+    .btn-signin{
+        margin-top: 25rem;
+    }
+    .content{
+        margin-top: 25rem;
+        max-width: 30rem;
+        margin-left: 10%;
+    }
+    .robo{
+        scale: 0.5;
+        top:170px;
+        right: 0;
+    }
+    .tag-box{
+        width: 12rem;
+    }
+    .content h1{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1rem;
+        padding:0.5rem;
+
+    }
+    .btn-get-started{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+.about{
+    display:grid;
+    margin-top: 200px;
+    margin-left: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    
+}
+.about p{
+    margin: 10px ;
+    margin-left: 20px;
+    justify-content: center;
+    text-align: justify;
+    word-spacing: 5px;
+    text-indent: 50px;
+    line-height: 2;
+    color:grey;
+    letter-spacing: 2px;
+}
+.ser{
+    display:flex;
+    justify-content: justify;
+    align-items: justify; 
+}
+.service1{
+    background-color: lightgrey;
+    width: 300px;
+    height: 350px;
+    border:  rgb(220, 231, 250);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 30px;
+    transition: border-color 4s ease-out;
+}
+.service2{
+    background-color: lightgrey;
+    width: 300px;
+    height: 350px;
+    border:  rgb(220, 231, 250);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 30px;
+    transition: border-color 4s ease-out;
+
+}
+.service3{
+    background-color: lightgrey;
+    width: 300px;
+    height: 350px;
+    border:  rgb(220, 231, 250);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 30px;
+    transition: border-color 4s ease-out;
+
+}
+.service4{
+    background-color: lightgrey;
+    width: 300px;
+    height: 350px;
+    border:  rgb(220, 231, 250);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 30px;
+    transition: border-color 4s ease-out;
+
+}
+.service1:hover{
+    background-color: cornsilk;
+    animation-delay: 3s;
+
+}
+.service2:hover{
+    background-color: cornsilk;
+    animation-delay: 3s;
+
+}
+.service3:hover{
+    background-color: cornsilk;
+    animation-delay: 3s;
+
+}
+.service4:hover{
+    background-color: cornsilk;
+    animation-delay: 3s;
+
+}
+.image-gradient{
+    border-image-repeat: repeat;
+}
+.form{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    background-color: aliceblue;
+    
+    
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: azure;
+    padding: 20px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+.submit{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #014244;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: gray;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+    
+    <img class="image-gradient" src="pexels-photo-7130493.webp" alt="gradients">
+    <div class="layer-blur"></div>
+    <div class="container">
+        <header>
+            <h1 class="'logo">Welcome to My Web Page</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+            <button class="btn-signin">SignIN</button> 
+        </header>
+        <main>
+        <div class="content">
+            <div class="tag">Introduction</div>
+            <h1>Hello<br>Developer</h1>
+            <p class="description">A full stack developer is a professional who can develop both the frontend and backend of applications. They handle the entire web application or website, from the user interface to the server-side logic and database management</p>
+            <div class="button">
+                <a href="#" class="btn-get-started">Documentation </a>
+                <a href="#" class="btn-signin-main">Sign In </a>
+            </div>
+        </div>
+        <spline-viewer class="robo" loading-anim-type="spinner-small-dark" url="https://prod.spline.design/4vJhWE6M6OxtOrjx/scene.splinecode"></spline-viewer>
+        <div class="about">
+            <h2>About Me</h2>
+            <p> I am a full stack developer with a passion for creating dynamic and responsive web applications. I have experience in various technologies and frameworks, allowing me to build robust solutions that meet user needs.
+                Morning hours are usually dedicated to tackling complex tasks that require deep concentration, such as coding, debugging, and optimizing code.
+                Full stack developers work on both the front end and back end of web development, which includes crafting user interfaces with HTML, CSS, and JavaScript, and managing server-side logic with languages like Python or Node.js.
+                In the afternoon, I often shift my focus to collaboration and communication, engaging with team members, attending meetings, and reviewing code. This time is also used for testing and deploying applications, ensuring that everything runs smoothly before going live.
+            </p>
+        </div>
+        <div class="service">
+            <h2>Services</h2>
+            <div class="ser">
+            <div class="service1">
+                <h3>Web Development</h3>
+                <p>Web Development is the foundation of modern websites and applications. This course covers HTML, CSS, and JavaScript, the core technologies for building interactive and responsive web pages.</p>
+            </div>
+            <div class="service2">
+                <h3>Mobile App Development</h3>
+                <p>Android development are a fundamental component, crucial for tasks that need to run in the background, independent of a user interface. They are a core part of an Android application's lifecycle.</p>
+            </div>
+            <div class="service3">
+                <h3>UI/UX Design</h3>
+                <p>UI/UX Design is essential for creating user-friendly interfaces and experiences. This course covers design principles, wireframing, prototyping, and usability testing to ensure applications are intuitive and visually appealing.</p>
+            </div>
+            <div class="service4">
+                <h3>Frontend developer</h3>
+                <p>A front-end developer is responsible for building the user-facing side of websites and web applications, focusing on creating an enjoyable user interface (UI) that users see and interact with directly.</p>
+            </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to get in touch, feel free to reach out via email or connect with me on social media.</p>
+            <form class="form" action="#" method="post">
+                <h4>Name</h4>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <h4>Email</h4>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <h4>Message</h4>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <br>
+                <button class="submit" type="submit">Send Message</button>
+            </form>
+        </div>
+</body>
+    </main>  
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</html>
